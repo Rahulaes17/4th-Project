@@ -1,3 +1,8 @@
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+});
+
 function videoconanimation() {
     var videocon = document.querySelector ("#video-container")
 var playbtn = document.querySelector ("#play")
@@ -42,3 +47,4 @@ function loadinganimation(){
     })
 }
 loadinganimation()
+
