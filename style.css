@@ -84,6 +84,14 @@ html, body {
     transform: scale(1.1);
 }
 
+#page2 .elem .dets{
+    height: 50px;
+    width: 60%;
+    position: absolute;
+    border-radius: 30px;
+    background-color: palegoldenrod;
+}
+
 @media (max-width:600px) {
     #page1 {
         min-height: 70vh;
@@ -142,10 +150,4 @@ html, body {
         margin-bottom: 3vw;
     }
     
-    #page2 .elem img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        transform: scale(1.1);
-    }
 }
