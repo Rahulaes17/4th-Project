@@ -37,9 +37,10 @@ function navbaranimation(){
         ScrollTrigger: {
             trigger: "#page1",
             scroller: "#main",
-            start: "top 0",
+            markers:true,
+            start: "top 0" ,
             end: "top -5%",
-            scrub:true
+            scrub: true
         }
     })
     
@@ -49,7 +50,7 @@ function navbaranimation(){
         ScrollTrigger:{
             trigger: "#page1",
             scroller: "#main",
-            start: "0",
+            start: "top 0",
             end: "top -5%",
             scrub:true
         }
