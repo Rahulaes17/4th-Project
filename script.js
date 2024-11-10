@@ -31,32 +31,34 @@ ScrollTrigger.refresh();
 }
 locomotiveanimation()
 
-function navbaranimation(){
-    gsap.to("#nav-part1 svg",{
-        transform: "translateY(-100%)",
-        ScrollTrigger: {
+function navbaranimation() {
+    gsap.to("#nav-part1 svg", {
+        y: -83,  
+        scrollTrigger: {
             trigger: "#page1",
-            scroller: "#main",
-            markers:true,
-            start: "top 0" ,
+            scroller: "#main", 
+            start: "top top",
             end: "top -5%",
-            scrub: true
+            scrub: true, 
+            markers: false,
         }
-    })
-    
-    gsap.to("#nav-part2 #links",{
-        transform:"translateY(-100%)",
+    });
+
+    gsap.to("#nav-part2 #links", {
+        y: -100,
         opacity: 0,
-        ScrollTrigger:{
+        scrollTrigger: {
             trigger: "#page1",
             scroller: "#main",
-            start: "top 0",
+            start: "top top",
             end: "top -5%",
-            scrub:true
+            scrub: true,
+            markers: false,
         }
-    })
+    });
 }
-navbaranimation()
+navbaranimation();
+
 
 function videoconanimation() {
     var videocon = document.querySelector ("#video-container")
