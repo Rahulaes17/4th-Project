@@ -203,6 +203,12 @@ body{
     flex-wrap: wrap;
 }
 
+#page4{
+    min-height: 100vh;
+    width: 50%;
+    font-family: helvetica now text;
+}
+
 .child{
     height: 65vh;
     width: 40vw;
